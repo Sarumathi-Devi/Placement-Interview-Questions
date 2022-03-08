@@ -13,7 +13,7 @@ int main()
     while ( i < num-1 )
     {
         j = num-1-i;
-        while ( j > 0 )
+        while ( j > 1 )
         {
             cout << " ";
             j--;
