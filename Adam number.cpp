@@ -19,7 +19,7 @@ int main()
     int n;
     cin >> n;
     int m = reverse(n);
-    if ( (n*n) == reverse(m*m) ) cout << "Yes";
-    else cout << "No";
+    if ( (n*n) == reverse(m*m) ) cout << "Yes, the given number is a Adam number";
+    else cout << "No, the given number is not a Adam number";
     return 0;
 }
