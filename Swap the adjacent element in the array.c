@@ -1,3 +1,8 @@
+//INPUT : 5
+//        10 20 30 40 50
+
+//OUTPUT : 20 10 40 30 50
+
 #include <stdio.h>
 int main()
 {
