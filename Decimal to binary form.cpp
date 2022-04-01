@@ -12,7 +12,7 @@ int main()
   
   while ( num )
   {
-     binaryform = ( (num%2)*place );
+     binaryform += ( (num%2)*place );
      place *= 10;
      num /= 2;
   }
