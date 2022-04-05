@@ -1,3 +1,14 @@
+/*
+ INPUT : 6
+ OUTPUT : 
+     0
+    101
+   21012
+  3210123
+ 432101234
+54321012345 
+*/
+
 #include <bits/stdc++.h>
 #include <iomanip>
 using namespace std;
