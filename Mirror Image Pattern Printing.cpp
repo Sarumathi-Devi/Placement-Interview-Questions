@@ -29,7 +29,5 @@ int main()
         ctr += 1;
         cout << endl;
     }
-    
-    
     return 0;
 }
