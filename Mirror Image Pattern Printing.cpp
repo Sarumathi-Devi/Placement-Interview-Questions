@@ -1,33 +1,30 @@
 #include <bits/stdc++.h>
+#include <iomanip>
 using namespace std;
 int main()
 {
     int num;
-    cin >> num;
-    int i,k;
-    int j = num-1;
-    int var1 = 1;
-    int var2 = 1;
+    cin >>  num;
     
-    i = 0;
-    while ( i < num-1 )
+    int ctr;
+    int idx;
+    
+    ctr = 0;
+    while ( ctr < num )
     {
-        j = num-1-i;
-        while ( j > 1 )
-        {
-            cout << " ";
-            j--;
-        }
-        k = 1;
-        while ( k <= var1 )
-        {
-            cout << abs(k-var2);
-            k++;
-        }
+        idx = 0;
+        while ( idx++ < num-ctr-1  ) cout << setw(2) << " ";
+        
+        idx = 0;
+        while ( idx < ctr ) cout << setw(2) << (ctr-(idx++)) ;
+        cout << setw(2) << "0";
+        idx = 0;
+        while ( idx++ < ctr ) cout << setw(2) << idx ;
+        
+        ctr += 1;
         cout << endl;
-        var1 += 2;
-        var2 += 1;
-        i++;
     }
+    
+    
     return 0;
 }
