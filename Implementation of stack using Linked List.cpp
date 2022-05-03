@@ -7,15 +7,15 @@ class node
 {
     public: 
         int data;
-        struct node* next;
+        node* next;
 };
 
-struct node* topidx = NULL;
-struct node* temp = NULL;
+node* topidx = NULL;
+node* temp = NULL;
 
 void push( int input )
 {
-    struct node* newNode;
+    node* newNode;
     newNode = new node();
     newNode -> data = input;
     
@@ -32,7 +32,7 @@ void pop()
     if ( topidx == NULL ) cout << "Stack Underflow" << endl;
     else
     {
-        cout << topidx -> data << endl;
+        cout << "The popped element " topidx -> data << endl;
         temp = topidx;
         topidx = topidx -> next;
         free(temp);
@@ -44,7 +44,7 @@ void top()
     if ( topidx == NULL ) cout << "Stack underflow" << endl;
     else 
     {
-        cout << topidx -> data;
+        cout << "The top element is : " << topidx -> data << endl;
     }
 }
 
@@ -56,6 +56,7 @@ void display()
         cout << temp -> data << " ";
         temp = temp -> next;
     }
+    cout << endl;
 }
 
 int main()
@@ -105,3 +106,4 @@ int main()
     cout << "Thank Yeew";
     return 0;
 }
+
