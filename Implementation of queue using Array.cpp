@@ -96,7 +96,7 @@ int main()
         if ( choice == 1 ) continue;
         else break;
     }
-    cout << "Thank Yeew";*/
+    cout << "Thank Yeew";
     
     return 0;
 }
