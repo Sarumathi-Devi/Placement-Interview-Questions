@@ -35,5 +35,4 @@ int main()
         if ( prime[ctr] == true ) cout << ctr << " ";
         ctr++;
     }
-    cout << count;
 }
